@@ -52,7 +52,7 @@ Now to test, run `asterisk -r` and then `rpt fun <your node number here> *355553
 ## Configure allmon3
 
  - `nano /etc/allmon3/allmon3.ini`
- - `allmon3-passwd –delete allmon3`
+ - `allmon3-passwd --delete allmon3`
  - `allmon3-passwd admin` (create the password for the allmon3 page)
  - `nano /etc/asterisk/manager.conf`
 
