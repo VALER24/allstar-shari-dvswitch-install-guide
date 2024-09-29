@@ -1,4 +1,4 @@
-# Setup ASL3 Shari <> DVSwitch <> MMDVM Reflector
+# Setup ASL3 <> Shari <> DVSwitch
 
 ## Install ASL3 on debian 12 server or pi:
 
