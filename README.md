@@ -65,6 +65,9 @@ Test to make sure it works by going to `http://youripaddress/allmon3` replace yo
 
 ## Configure Echolink https://www.youtube.com/watch?v=S6BJyUns7uU&t=342s
 
+ - `nano /etc/asterisk/echolink.conf` put in all your information, put in your allstar node number towards the bottom page where it wants you too.
+ - `nano /etc/asterisk/modules.conf` find the echolink section and change it from noload to load. Restart asterisk.
+
 ## Install and Configure DVSwitch:
 
 Run `asl-menu` and create a new node called 1999. Select it as no interface. When you see the whole thing go ahead and select the interface to USRP and duplex type to 0 and then HALF.
