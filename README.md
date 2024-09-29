@@ -58,6 +58,8 @@ Make your password to be 'password' and then save.
 
 Test to make sure it works by going to `http://youripaddress/allmon3` replace youripaddress with the IP address of your node. Run `ip a` to find your ip. Errors? Double check that everything is setup correcty.
 
+## Configure Echolink https://www.youtube.com/watch?v=S6BJyUns7uU&t=342s
+
 ## Install and Configure DVSwitch:
 
 Run `asl-menu` and create a new node called 1999. Select it as no interface. When you see the whole thing go ahead and select the interface to USRP and duplex type to 0 and then HALF.
