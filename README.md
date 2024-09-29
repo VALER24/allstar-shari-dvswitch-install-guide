@@ -93,3 +93,27 @@ txPort = 32001
 rxPort = 34001
 ```
 
+`nano /opt/MMDVM_Bridge/MMDVM_Bridge.ini` Make sure all your details are correct, all the modes are enabled, and change the DMR Network jitter to 750.
+
+Alright you should be set!
+
+```bash
+systemctl enable analog_bridge && systemctl enable mmdvm_bridge && systemctl enable md380-emu
+
+systemctl start analog_bridge && systemctl start mmdvm_bridge && systemctl start md380-emu
+```
+
+Reboot and let's see if it works. Connect your private node 1999 and then do this.
+
+```bash
+/opt/MMDVM_Bridge/dvswitch.sh mode YSF
+/opt/MMDVM_Bridge/dvswitch.sh tune parrot.ysfreflector.de:42020
+```
+
+When you run the mode command and hear a kerchunk then you know it's working. If you didn't hear that kerchunk and can't get the parrot to make then reboot the node again. If nothing run the status of the analog_bridge and mmdvm_bridge and start troubleshooting. If no results then go get help from the DVSwitch groups.io.
+
+Assuming all is well then lets go ahead and install a DVSwitch mode switcher that is very nice for changing the modes/talkgroups. Follow the instructions found here https://github.com/firealarmss/dvswitch_mode_switcher
+
+##The End
+
+Well it looks like you got everything installed and working. Good job. If you have any issues then feel free to reach out to collin@k0nnk.com or valer24 on discord and I'll try my best to help you out. 73,
