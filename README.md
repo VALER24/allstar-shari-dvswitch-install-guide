@@ -4,6 +4,8 @@
 
 Download raspberry pi imager https://downloads.raspberrypi.org/imager/imager_latest.exe select your raspberry pi, a for the OS select other then Lite 64 bit. For the additional settings create a username/password and make sure SSH is enabled. Flash your micro SD card then plug it into your raspberry and boot. Find your SSH info and SSH in using windows command prompt or terminal: `ssh username@ipaddress` putty is terrible DO NOT USE IT!
 
+Install asl3:
+
 ```bash
 sudo -s
 cd /tmp
