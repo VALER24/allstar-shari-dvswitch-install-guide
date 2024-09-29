@@ -116,6 +116,6 @@ When you run the mode command and hear a kerchunk then you know it's working. If
 
 Assuming all is well then lets go ahead and install a DVSwitch mode switcher that is very nice for changing the modes/talkgroups. Follow the instructions found here https://github.com/firealarmss/dvswitch_mode_switcher
 
-##The End
+## The End
 
 Well it looks like you got everything installed and working. Good job. If you have any issues then feel free to reach out to collin@k0nnk.com or valer24 on discord and I'll try my best to help you out. 73,
