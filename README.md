@@ -8,6 +8,7 @@ Install asl3:
 
 ```bash
 sudo -s
+apt update && apt upgrade
 cd /tmp
 wget https://repo.allstarlink.org/public/asl-apt-repos.deb12_all.deb
 dpkg -i asl-apt-repos.deb12_all.deb
