@@ -114,7 +114,7 @@ Reboot and let's see if it works. Connect your private node 1999 and then do thi
 
 When you run the mode command and hear a kerchunk then you know it's working. If you didn't hear that kerchunk and can't get the parrot to make then reboot the node again. If nothing run the status of the analog_bridge and mmdvm_bridge and start troubleshooting. If no results then go get help from the DVSwitch groups.io.
 
-Assuming all is well then lets go ahead and install a DVSwitch mode switcher that is very nice for changing the modes/talkgroups. Follow the instructions found here https://github.com/firealarmss/dvswitch_mode_switcher
+Assuming all is well then lets go ahead and install a DVSwitch mode switcher that is very nice for changing the modes/talkgroups. Follow the instructions found here https://github.com/firealarmss/dvswitch_mode_switcher OR you can use the commands listed above to change the mode/talkgroup.
 
 ## The End
 
