@@ -70,7 +70,25 @@ Test to make sure it works by going to `http://youripaddress/allmon3` replace yo
 
 ## Install and Configure DVSwitch:
 
-Run `asl-menu` and create a new node called 1999. Select it as no interface. When you see the whole thing go ahead and select the interface to USRP and duplex type to 0 and then HALF.
+Add this into your `/etc/asterisk/rpt.conf` underneath your main node number stanza at the very bottom of the file:
+
+```
+[1999]
+rxchannel = USRP/127.0.0.1:34001:32001  ; Use the USRP channel driver. Must be enabled in modules.conf
+; 127.0.0.1 = IP of the target application
+; 34001 = UDP port the target application is listening on
+; 32001 = UDP port ASL is listening on
+duplex = 0
+hangtime = 0
+althangtime = 0
+holdofftelem = 1
+telemdefault = 0
+telemdynamic = 0
+linktolink = no
+nounkeyct = 1
+totime = 180000
+```
+
 Restart asterisk and test it. Go to your allmon3 page, login, and connect to node 1999. If it connects then your set. If not then make sure you did everything right.
 
 ```bash
