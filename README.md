@@ -1,5 +1,8 @@
 # Setup ASL3 <> Shari <> DVSwitch
 
+Feel free to run the install script, it installs asl3 and dvswitch-server. It does NOT install allmon3, but all you have to do after you run the script is `apt install allmon3`
+To run the script run these commands: `apt update && apt install git` `git clone github.com/VALER24/allstar-shari-dvswitch-install-guide` `chmod +x install_script.sh && ./install_script.sh`
+
 ## Install ASL3 on debian 12 server or pi:
 
 Download raspberry pi imager https://downloads.raspberrypi.org/imager/imager_latest.exe select your raspberry pi, a for the OS select other then Lite 64 bit. For the additional settings create a username/password and make sure SSH is enabled. Flash your micro SD card then plug it into your raspberry and boot. Find your SSH info and SSH in using windows command prompt or terminal: `ssh username@ipaddress` putty is terrible DO NOT USE IT!
